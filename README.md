@@ -1,2 +1,2 @@
-# Energy-Efficient-High-Performance-Machine-Learning-Algorithms
-Recent ongoing project.
+# About
+Recent ongoing project of CSE 425 Course.
