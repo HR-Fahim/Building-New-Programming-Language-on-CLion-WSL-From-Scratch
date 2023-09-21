@@ -1,0 +1,3 @@
+/mnt/c/Users/Asus/Desktop/CSE425/Project/Energy-Efficient-High-Performance-Machine-Learning-Algorithms/build/CMakeFiles/hydro.dir
+/mnt/c/Users/Asus/Desktop/CSE425/Project/Energy-Efficient-High-Performance-Machine-Learning-Algorithms/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Asus/Desktop/CSE425/Project/Energy-Efficient-High-Performance-Machine-Learning-Algorithms/build/CMakeFiles/rebuild_cache.dir

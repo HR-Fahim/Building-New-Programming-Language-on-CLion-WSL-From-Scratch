@@ -1,0 +1,31 @@
+// {
+//     "configurations": [
+//         {
+//             "name": "Linux",
+//             "includePath": [
+//                 "${workspaceFolder}/**"
+//             ],
+//             "defines": [],
+//             "cppStandard": "gnu++23",
+//             "compilerPath": "/user/bin/gcc++"
+//         }
+//     ],
+//     "version": 4
+// }
+
+{
+    "configurations": [
+        {
+            "name": "WSL",
+            "intelliSenseMode": "gcc-x64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/mnt/c/Users/Asus/Desktop/CSE425/Project/Energy-Efficient-High-Performance-Machine-Learning-Algorithms**"  // Add your WSL include paths here
+            ],
+            "compilerPath": "/usr/bin/g++",  // Path to your C/C++ compiler in WSL
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
