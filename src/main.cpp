@@ -121,9 +121,12 @@ int main(int argc, char* argv[]) {
     // std::cout << tokens_to_asm(tokens) << std::endl;
 
     {
-        std::fstream file("../out.asm", std::ios::out);
+        std::fstream file("out.asm", std::ios::out);
         file << tokens_to_asm(tokens);
     }
+
+    system("nasm -felf64 out.asm");
+    system("ld -o out out.o");
 
     return EXIT_SUCCESS;
 }
