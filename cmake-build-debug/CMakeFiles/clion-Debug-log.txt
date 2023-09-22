@@ -1,0 +1,121 @@
+"C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\Asus\Desktop\CSE425\Project\Energy-Efficient-High-Performance-Machine-Learning-Algorithms -B C:\Users\Asus\Desktop\CSE425\Project\Energy-Efficient-High-Performance-Machine-Learning-Algorithms\cmake-build-debug
+-- The C compiler identification is GNU 13.1.0
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/gcc.exe
+-- Check for working C compiler: C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/gcc.exe - broken
+CMake Error at C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:67 (message):
+  The C compiler
+
+    "C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/gcc.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: C:/Users/Asus/Desktop/CSE425/Project/Energy-Efficient-High-Performance-Machine-Learning-Algorithms/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-59c78j
+    
+    Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe -v cmTC_85b10 && [1/2] C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_85b10.dir/testCCompiler.c.obj -c C:/Users/Asus/Desktop/CSE425/Project/Energy-Efficient-High-Performance-Machine-Learning-Algorithms/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-59c78j/testCCompiler.c
+    [2/2] cmd.exe /C "cd . && C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe   CMakeFiles/cmTC_85b10.dir/testCCompiler.c.obj -o cmTC_85b10.exe -Wl,--out-implib,libcmTC_85b10.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+    FAILED: cmTC_85b10.exe 
+    cmd.exe /C "cd . && C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe   CMakeFiles/cmTC_85b10.dir/testCCompiler.c.obj -o cmTC_85b10.exe -Wl,--out-implib,libcmTC_85b10.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libkernel32.a when searching for -lkernel32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libkernel32.a when searching for -lkernel32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libuser32.a when searching for -luser32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libuser32.a when searching for -luser32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libgdi32.a when searching for -lgdi32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libgdi32.a when searching for -lgdi32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libwinspool.a when searching for -lwinspool
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libwinspool.a when searching for -lwinspool
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libshell32.a when searching for -lshell32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libshell32.a when searching for -lshell32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libole32.a when searching for -lole32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libole32.a when searching for -lole32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/liboleaut32.a when searching for -loleaut32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\liboleaut32.a when searching for -loleaut32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libuuid.a when searching for -luuid
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libuuid.a when searching for -luuid
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libcomdlg32.a when searching for -lcomdlg32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libcomdlg32.a when searching for -lcomdlg32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libadvapi32.a when searching for -ladvapi32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libadvapi32.a when searching for -ladvapi32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libmingw32.a when searching for -lmingw32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libmingw32.a when searching for -lmingw32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libmoldname.a when searching for -lmoldname
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libmoldname.a when searching for -lmoldname
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libmingwex.a when searching for -lmingwex
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libmingwex.a when searching for -lmingwex
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libmsvcrt.a when searching for -lmsvcrt
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libmsvcrt.a when searching for -lmsvcrt
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libkernel32.a when searching for -lkernel32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libkernel32.a when searching for -lkernel32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libadvapi32.a when searching for -ladvapi32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libadvapi32.a when searching for -ladvapi32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libshell32.a when searching for -lshell32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libshell32.a when searching for -lshell32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libuser32.a when searching for -luser32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libuser32.a when searching for -luser32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libkernel32.a when searching for -lkernel32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libkernel32.a when searching for -lkernel32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libmingw32.a when searching for -lmingw32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libmingw32.a when searching for -lmingw32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libmoldname.a when searching for -lmoldname
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libmoldname.a when searching for -lmoldname
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libmingwex.a when searching for -lmingwex
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libmingwex.a when searching for -lmingwex
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libmsvcrt.a when searching for -lmsvcrt
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libmsvcrt.a when searching for -lmsvcrt
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib/libkernel32.a when searching for -lkernel32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: skipping incompatible C:/MinGW/lib/../lib\libkernel32.a when searching for -lkernel32
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: i386 architecture of input file `C:/MinGW/lib/../lib/crt2.o' is incompatible with i386:x86-64 output
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x34): undefined reference to `_signal'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x89): undefined reference to `_signal'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0xc0): undefined reference to `_signal'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0xd9): undefined reference to `_signal'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x10b): undefined reference to `_signal'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x153): more undefined references to `_signal' follow
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x15f): undefined reference to `_fesetenv'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x17d): undefined reference to `_signal'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x199): undefined reference to `_signal'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x1b8): undefined reference to `___dyn_tls_init_callback'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x1e4): undefined reference to `_SetUnhandledExceptionFilter@4'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x1ec): undefined reference to `___cpu_features_init'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x1f1): undefined reference to `__CRT_fenv'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x1f9): undefined reference to `_fesetenv'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x203): undefined reference to `__CRT_fmode'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x20d): undefined reference to `__imp___iob'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x212): undefined reference to `__fmode'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x221): undefined reference to `__setmode'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x226): undefined reference to `__CRT_fmode'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x235): undefined reference to `__setmode'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x23a): undefined reference to `__CRT_fmode'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x249): undefined reference to `__setmode'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x24e): undefined reference to `___p__fmode'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x254): undefined reference to `__fmode'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x25b): undefined reference to `__pei386_runtime_relocator'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x263): undefined reference to `___main'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x268): undefined reference to `___p__environ'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x284): undefined reference to `_main'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x28b): undefined reference to `__cexit'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x293): undefined reference to `_ExitProcess@4'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x2c3): undefined reference to `__CRT_glob'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x2d7): undefined reference to `___getmainargs'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x2ec): undefined reference to `__imp____set_app_type'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x30c): undefined reference to `__imp____set_app_type'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x322): undefined reference to `__imp__atexit'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: C:/MinGW/lib/../lib/crt2.o:(.text+0x332): undefined reference to `__imp___onexit'
+    C:\Program Files\JetBrains\CLion 2023.2.2\bin\mingw\bin/ld.exe: cmTC_85b10_exe_ertr000001.o:(.rdata+0x0): undefined reference to `_pei386_runtime_relocator'
+    collect2.exe: error: ld returned 1 exit status
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:3 (project)
+
+
+-- Configuring incomplete, errors occurred!
