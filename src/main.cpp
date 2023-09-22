@@ -1,6 +1,25 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <optional>
+#include <vector>
+
+enum class TokenType {
+    _return,
+    int_lit,
+    semi
+};
+
+struct Token {
+    TokenType type;
+    std::optional<std::string> value;
+};
+
+std::vector<Token> tokenize(const std::string& str) {
+    for (char c : str) {
+        std::cout << c << std::endl;
+    }
+}
 
 int main(int argc, char* argv[]) {
 
@@ -18,7 +37,9 @@ int main(int argc, char* argv[]) {
         contents = contents_stream.str();
     }
 
-    std::cout << contents << std::endl;
+    // std::cout << contents << std::endl;
+
+    tokenize(contents);
 
     std::fstream input(argv[1], std::ios::in);
     return EXIT_SUCCESS;
