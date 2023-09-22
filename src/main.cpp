@@ -118,7 +118,12 @@ int main(int argc, char* argv[]) {
 
     // std::fstream input(argv[1], std::ios::in);
 
-    std::cout << tokens_to_asm(tokens) << std::endl;
+    // std::cout << tokens_to_asm(tokens) << std::endl;
+
+    {
+        std::fstream file("../out.asm", std::ios::out);
+        file << tokens_to_asm(tokens);
+    }
 
     return EXIT_SUCCESS;
 }
