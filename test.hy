@@ -1,1 +1,1 @@
-return 9;
+exit 69;
