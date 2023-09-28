@@ -4,6 +4,8 @@
 #include <optional>
 #include <vector>
 
+#include "./generation.hpp"
+#include "./parser.hpp"
 #include "./tokenization.hpp"
 
 //enum class TokenType {
@@ -78,7 +80,7 @@
 
 std::string tokens_to_asm(const std::vector<Token>& tokens) {
     std::stringstream output;
-    output << "global_start\nstart:\n";
+    output << "global_start\n_start:\n";
     for (int i=0; i < tokens.size(); i++) {
         const Token& token = tokens.at(i);
         if (token.type == TokenType::exit) {
@@ -121,13 +123,24 @@ int main(int argc, char* argv[]) {
     // std::vector<Token> tokens = tokenize(contents);
     std::vector <Token> tokens = tokenizer.tokenize();
 
+    Parser parser(std::move(tokens));
+    std::optional<NodeExit> tree = parser.parse();
+
+    if (!tree.has_value()) {
+        std::cerr << "No exit statement found" << std::endl;
+        return EXIT_FAILURE;
+    }
+    
+    Generator generator(tree.value());
+
     // std::fstream input(argv[1], std::ios::in);
 
     // std::cout << tokens_to_asm(tokens) << std::endl;
 
     {
         std::fstream file("out.asm", std::ios::out);
-        file << tokens_to_asm(tokens);
+        // file << tokens_to_asm(tokens);
+        file << generator.generate();
     }
 
     system("nasm -felf64 out.asm");
