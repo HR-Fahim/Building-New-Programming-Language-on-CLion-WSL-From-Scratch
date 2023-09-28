@@ -37,32 +37,60 @@ class Parser {
         }
     }
 
-    std::optional<NodeExit> parse(){
+    std::optional<NodeExit> parse() {
         std::optional<NodeExit> exit_node;
-        while(peek().has_value()){
-            if (peek().value().type == TokenType::exit){
+        while (peek().has_value()) {
+            if (peek().value().type == TokenType::exit) {
                 consume();
                 if (auto node_expr = parse_expr()) {
                     exit_node = NodeExit{.expr = node_expr.value()};
-                }
-                else {
+                } else {
                     std::cerr << "Invalid Expression" << std::endl;
                     exit(EXIT_FAILURE);
                 }
-                if (peek().has_value() && peek().value().type != TokenType::semi) {
-                    consume();
-                }
-                else {
-                    std::cerr << "Invalid Expression" << std::endl;
+                if (peek().has_value() && peek().value().type == TokenType::semi) {
+                    consume(); // Consume the semicolon
+                } else {
+                    std::cerr << "Semicolon expected" << std::endl;
                     exit(EXIT_FAILURE);
                 }
+            } else {
+                std::cerr << "Invalid Statement" << std::endl;
+                exit(EXIT_FAILURE);
             }
         }
         m_index = 0;
         return exit_node;
     }
 
-    private:
+//    std::optional<NodeExit> parse() {
+//        std::optional<NodeExit> exit_node;
+//        while (peek().has_value()) {
+//            if (peek().value().type == TokenType::exit) {
+//                consume();
+//                if (auto node_expr = parse_expr()) {
+//                    exit_node = NodeExit{.expr = node_expr.value()};
+//                } else {
+//                    std::cerr << "Invalid Expression" << std::endl;
+//                    exit(EXIT_FAILURE);
+//                }
+//                if (peek().has_value() && peek().value().type == TokenType::semi) {
+//                    consume(); // Consume the semicolon
+//                } else {
+//                    std::cerr << "Semicolon expected" << std::endl;
+//                    exit(EXIT_FAILURE);
+//                }
+//            } else {
+//                std::cerr << "Invalid Statement" << std::endl;
+//                exit(EXIT_FAILURE);
+//            }
+//        }
+//        m_index = 0;
+//        return exit_node;
+//    }
+
+
+private:
 
     [[nodiscard]] inline std::optional<Token> peek(int ahead = 1) const
             {
