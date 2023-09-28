@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/Asus/Desktop/CSE425/Project/Energy-Efficient-High-Performance-Machine-Learning-Algorithms
+# Install script for directory: /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/Asus/Desktop/CSE425/Project/Energy-Efficient-High-Performance-Machine-Learning-Algorithms/cmake-build-relwithdebinfo-wsl/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/cmake-build-relwithdebinfo-wsl/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

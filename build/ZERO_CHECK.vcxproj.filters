@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Asus\Desktop\CSE425\Project\Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch\build\CMakeFiles\e08be287488669d5cacb5fdaa9b2e6eb\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{33FA4864-FE6E-3AA4-B6AA-556BEAC7F518}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
