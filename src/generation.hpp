@@ -42,7 +42,7 @@ class Generator {
                 }
                 const auto& var = gen->m_vars.at(expr_ident.ident.value.value());
                 std::stringstream offset;
-                offset << "QWORD [rsp + " << (gen->m_stack_size - var.stack_loc) * 4 << "]\n";
+                offset << "QWORD [rsp + " << (gen->m_stack_size - var.stack_loc -1) * 4 << "]\n";
                 gen->push(offset.str());
             }
         };
@@ -94,12 +94,12 @@ class Generator {
     private:
 
     void push(const std::string& reg){
-        m_output << "push " << reg << "\n";
+        m_output << "   push " << reg << "\n";
         m_stack_size++;
     }
 
     void pop(const std::string& reg){
-        m_output << "pop " << reg << "\n";
+        m_output << "   pop " << reg << "\n";
         m_stack_size--;
     }
 
