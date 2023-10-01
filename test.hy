@@ -1,1 +1,3 @@
-exit 57;
+let x = 7;
+let y = x;
+exit(x);

@@ -211,10 +211,18 @@ CMakeFiles/hydro.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/vector.tcc \
   ../src/generation.hpp \
   ../src/parser.hpp \
+  /usr/include/c++/11/variant \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/parse_numbers.h \
   ../src/tokenization.hpp
 
 
 ../src/tokenization.hpp:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/include/c++/11/variant:
 
 /usr/include/c++/11/bits/stl_bvector.h:
 
@@ -319,6 +327,8 @@ CMakeFiles/hydro.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/endian.h:
 
@@ -477,6 +487,8 @@ CMakeFiles/hydro.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/c++/11/bits/postypes.h:
+
+/usr/include/c++/11/bits/invoke.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
