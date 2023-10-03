@@ -221,13 +221,18 @@ CMakeFiles/hydro.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/cassert \
+  /usr/include/assert.h \
   ../src/parser.hpp \
   /usr/include/c++/11/variant \
   /usr/include/c++/11/bits/parse_numbers.h \
+  ../src/arena.hpp \
   ../src/tokenization.hpp
 
 
 ../src/tokenization.hpp:
+
+../src/arena.hpp:
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
@@ -581,6 +586,8 @@ CMakeFiles/hydro.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
+/usr/include/c++/11/cassert:
+
 /usr/include/c++/11/bits/stl_algo.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
@@ -644,6 +651,8 @@ CMakeFiles/hydro.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/assert.h:
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 

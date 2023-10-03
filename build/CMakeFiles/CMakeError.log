@@ -214,3 +214,165 @@ gmake: *** [Makefile:127: cmTC_0fb9b/fast] Error 2
 
 
 
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_be487/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_be487.dir/build.make CMakeFiles/cmTC_be487.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_be487.dir/CMakeCCompilerABI.c.o
+/mnt/c/MinGW/bin/gcc.exe   -v -o CMakeFiles/cmTC_be487.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+gcc.exe: error: /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c: No such file or directory
+Using built-in specs.
+COLLECT_GCC=gcc.exe
+Target: mingw32
+Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls
+Thread model: win32
+gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
+Linking C executable cmTC_be487
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be487.dir/link.txt --verbose=1
+/mnt/c/MinGW/bin/gcc.exe  -v CMakeFiles/cmTC_be487.dir/CMakeCCompilerABI.c.o -o cmTC_be487 
+gcc.exe: error: CMakeFiles/cmTC_be487.dir/CMakeCCompilerABI.c.o: No such file or directory
+Using built-in specs.
+COLLECT_GCC=gcc.exe
+COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe
+Target: mingw32
+Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls
+Thread model: win32
+gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
+gmake[1]: Leaving directory '/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp'
+
+
+Cannot copy output executable
+  ''
+to destination specified by COPY_FILE:
+  '/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin'
+Unable to find the executable at any of:
+  /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp/cmTC_be487
+  /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp/Debug/cmTC_be487
+  /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp/Development/cmTC_be487
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_443d0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_443d0.dir/build.make CMakeFiles/cmTC_443d0.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_443d0.dir/testCCompiler.c.o
+/mnt/c/MinGW/bin/gcc.exe    -o CMakeFiles/cmTC_443d0.dir/testCCompiler.c.o -c /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp/testCCompiler.c
+gcc.exe: error: /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp/testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_443d0.dir/build.make:78: CMakeFiles/cmTC_443d0.dir/testCCompiler.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_443d0/fast] Error 2
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_02acc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_02acc.dir/build.make CMakeFiles/cmTC_02acc.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_02acc.dir/CMakeCCompilerABI.c.o
+/mnt/c/MinGW/bin/gcc.exe   -v -o CMakeFiles/cmTC_02acc.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+gcc.exe: error: /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c: No such file or directory
+Using built-in specs.
+COLLECT_GCC=gcc.exe
+Target: mingw32
+Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls
+Thread model: win32
+gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
+Linking C executable cmTC_02acc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02acc.dir/link.txt --verbose=1
+/mnt/c/MinGW/bin/gcc.exe  -v CMakeFiles/cmTC_02acc.dir/CMakeCCompilerABI.c.o -o cmTC_02acc 
+gcc.exe: error: CMakeFiles/cmTC_02acc.dir/CMakeCCompilerABI.c.o: No such file or directory
+Using built-in specs.
+COLLECT_GCC=gcc.exe
+COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe
+Target: mingw32
+Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls
+Thread model: win32
+gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
+gmake[1]: Leaving directory '/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp'
+
+
+Cannot copy output executable
+  ''
+to destination specified by COPY_FILE:
+  '/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin'
+Unable to find the executable at any of:
+  /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp/cmTC_02acc
+  /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp/Debug/cmTC_02acc
+  /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp/Development/cmTC_02acc
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4d652/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4d652.dir/build.make CMakeFiles/cmTC_4d652.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4d652.dir/testCCompiler.c.o
+/mnt/c/MinGW/bin/gcc.exe    -o CMakeFiles/cmTC_4d652.dir/testCCompiler.c.o -c /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp/testCCompiler.c
+gcc.exe: error: /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp/testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_4d652.dir/build.make:78: CMakeFiles/cmTC_4d652.dir/testCCompiler.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_4d652/fast] Error 2
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0e8a0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0e8a0.dir/build.make CMakeFiles/cmTC_0e8a0.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e8a0.dir/CMakeCCompilerABI.c.o
+/mnt/c/MinGW/bin/gcc.exe   -v -o CMakeFiles/cmTC_0e8a0.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+gcc.exe: error: /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c: No such file or directory
+Using built-in specs.
+COLLECT_GCC=gcc.exe
+Target: mingw32
+Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls
+Thread model: win32
+gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
+Linking C executable cmTC_0e8a0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e8a0.dir/link.txt --verbose=1
+/mnt/c/MinGW/bin/gcc.exe  -v CMakeFiles/cmTC_0e8a0.dir/CMakeCCompilerABI.c.o -o cmTC_0e8a0 
+gcc.exe: error: CMakeFiles/cmTC_0e8a0.dir/CMakeCCompilerABI.c.o: No such file or directory
+Using built-in specs.
+COLLECT_GCC=gcc.exe
+COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe
+Target: mingw32
+Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls
+Thread model: win32
+gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
+gmake[1]: Leaving directory '/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp'
+
+
+Cannot copy output executable
+  ''
+to destination specified by COPY_FILE:
+  '/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin'
+Unable to find the executable at any of:
+  /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp/cmTC_0e8a0
+  /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp/Debug/cmTC_0e8a0
+  /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp/Development/cmTC_0e8a0
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8e73b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8e73b.dir/build.make CMakeFiles/cmTC_8e73b.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8e73b.dir/testCCompiler.c.o
+/mnt/c/MinGW/bin/gcc.exe    -o CMakeFiles/cmTC_8e73b.dir/testCCompiler.c.o -c /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp/testCCompiler.c
+gcc.exe: error: /mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp/testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_8e73b.dir/build.make:78: CMakeFiles/cmTC_8e73b.dir/testCCompiler.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_8e73b/fast] Error 2
+
+
+

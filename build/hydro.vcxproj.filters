@@ -15,6 +15,9 @@
     <ClInclude Include="C:\Users\Asus\Desktop\CSE425\Project\Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch\src\generation.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\Asus\Desktop\CSE425\Project\Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch\src\arena.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\Asus\Desktop\CSE425\Project\Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch\CMakeLists.txt" />
