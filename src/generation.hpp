@@ -39,6 +39,9 @@ class Generator {
                 offset << "QWORD [rsp + " << (gen->m_stack_size - var.stack_loc -1) * 8 << "]\n";
                 gen->push(offset.str());
             }
+            void operator()(const NodeTermParen* term_paren) const {
+                gen->gen_expr(term_paren->expr);
+            }
         };
         TermVisitor visitor{.gen = this};
         std::visit(visitor, term->var);

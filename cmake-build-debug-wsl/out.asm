@@ -10,15 +10,15 @@ _start:
    pop rbx
    mul rbx
    push rax
-   pop rax
-   pop rbx
-   div rbx
-   push rax
    mov rax, 10
    push rax
    pop rax
    pop rbx
    sub rax, rbx
+   push rax
+   pop rax
+   pop rbx
+   div rbx
    push rax
    push QWORD [rsp + 0]
 

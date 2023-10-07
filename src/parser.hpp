@@ -24,6 +24,10 @@ struct NodeTermIdent {
 
 struct NodeExpr;
 
+struct NodeTermParen {
+    NodeExpr* expr;
+};
+
 struct NodeBinExprAdd {
     NodeExpr* lhs;
     NodeExpr* rhs;
@@ -50,7 +54,7 @@ struct NodeBinExpr {
 };
 
 struct NodeTerm {
-    std::variant<NodeTermIntLit*, NodeTermIdent*> var;
+    std::variant<NodeTermIntLit*, NodeTermIdent*, NodeTermParen*> var;
 };
 
 struct NodeExpr {
@@ -140,6 +144,18 @@ class Parser {
             expr_ident->ident = ident.value();
             auto term = m_allocator.alloc<NodeTerm>();
             term->var = expr_ident;
+            return term;
+        } else if (auto open_paren = try_consume(TokenType::open_paren)) {
+            auto expr = parse_expr();
+            if (!expr.has_value()) {
+                std::cerr << "Unable to Parse Expression" << std::endl;
+                exit(EXIT_FAILURE);
+            } 
+            try_consume(TokenType::close_paren, "Expected Close Paren");
+            auto term_paren = m_allocator.alloc<NodeTermParen>();
+            term_paren->expr = expr.value();
+            auto term = m_allocator.alloc<NodeTerm>();
+            term->var = term_paren;
             return term;
         } else {
             return {};
