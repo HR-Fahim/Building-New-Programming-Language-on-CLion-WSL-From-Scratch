@@ -34,8 +34,18 @@ struct NodeBinExprMulti {
     NodeExpr* rhs;
 };
 
+struct NodeBinExprSub {
+    NodeExpr* lhs;
+    NodeExpr* rhs;
+};
+
+struct NodeBinExprDiv {
+    NodeExpr* lhs;
+    NodeExpr* rhs;
+};
+
 struct NodeBinExpr {
-    std::variant<NodeBinExprAdd*, NodeBinExprMulti*> var;
+    std::variant<NodeBinExprAdd*, NodeBinExprMulti*, NodeBinExprSub*, NodeBinExprDiv*> var;
     // NodeBinExprAdd* add;
 };
 
@@ -189,6 +199,22 @@ class Parser {
                 
                 multi->rhs = expr_rhs.value();
                 expr->var = multi;
+            } else if (op.type == TokenType::sub) {
+                auto sub = m_allocator.alloc<NodeBinExprSub>();
+                expr_lhs2->var = expr_lhs->var;
+                sub->lhs = expr_lhs2;
+                
+                sub->rhs = expr_rhs.value();
+                expr->var = sub;
+            } else if (op.type == TokenType::div) {
+                auto div = m_allocator.alloc<NodeBinExprDiv>();
+                expr_lhs2->var = expr_lhs->var;
+                div->lhs = expr_lhs2;
+                
+                div->rhs = expr_rhs.value();
+                expr->var = div;
+            } else {
+                assert(false); // Unreachable
             }
             // int next_min_prec = prec.value() + 1;
             // auto expr_rhs = parse_expr(next_min_prec);
