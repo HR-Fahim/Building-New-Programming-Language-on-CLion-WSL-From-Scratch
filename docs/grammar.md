@@ -4,9 +4,11 @@ $$
 [\text{Stmt}] &\to 
 \begin{cases}
 \text{exit}([\text{Expr}]); \\
-\text{let}\space\text{indent} = [\text{Expr}];
-\end{cases}
-\\
+\text{let}\space\text{indent} = [\text{Expr}]; \\
+\text{if} ([\text{Expr}])[\text{Scope}] \\
+[\text{Scope}]
+\end{cases} \\
+\text{Scope} &\to \{[\text{Stmt}]^*\} \\
 % [\text{exit}] &\to exit\space[\text{expr}]; \\
 [\text{Expr}] &\to 
 \begin{cases}
@@ -26,7 +28,7 @@ $$
 \begin{cases}
 \text{int\_lit} \\
 \text{ident} \\
-\([text{Expr}])
+([\text{Expr}])
 \end{cases}
 \end{align}
 $$

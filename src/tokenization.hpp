@@ -24,7 +24,10 @@ enum class TokenType {
     plus,
     star,
     sub,
-    div
+    div,
+    open_curly,
+    close_curly,
+    if_
 };
 
 // bool is_bin_op(TokenType type) {
@@ -93,6 +96,11 @@ class Tokenizer {
                         buf.clear();
                         // continue;
                     }
+                    else if (buf == "if") {
+                        tokens.push_back({.type = TokenType::if_});
+                        buf.clear();
+                        // continue;
+                    }
                     else
                     {
                         // std::cerr << "You messed up!" << std::endl;
@@ -150,6 +158,16 @@ class Tokenizer {
                 else if (peek().value() == '/') {
                     consume();
                     tokens.push_back({.type = TokenType::div});
+                    // continue;
+                }
+                else if (peek().value() == '{') {
+                    consume();
+                    tokens.push_back({.type = TokenType::open_curly});
+                    // continue;
+                }
+                else if (peek().value() == '}') {
+                    consume();
+                    tokens.push_back({.type = TokenType::close_curly});
                     // continue;
                 }
                 else if (std::isspace(peek().value())) {

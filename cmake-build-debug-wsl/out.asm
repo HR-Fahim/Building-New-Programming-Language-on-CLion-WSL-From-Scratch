@@ -4,23 +4,17 @@ _start:
    push rax
    mov rax, 3
    push rax
-   mov rax, 10
-   push rax
-   pop rax
-   pop rbx
-   sub rax, rbx
-   push rax
-   mov rax, 4
-   push rax
-   mov rax, 15
+   mov rax, 2
    push rax
    pop rax
    pop rbx
    mul rbx
    push rax
+   mov rax, 10
+   push rax
    pop rax
    pop rbx
-   add rax, rbx
+   sub rax, rbx
    push rax
    pop rax
    pop rbx
@@ -28,14 +22,18 @@ _start:
    push rax
    push QWORD [rsp + 0]
 
-   mov rax, 8
-   push rax
    pop rax
-   pop rbx
-   add rax, rbx
+   test rax, rax
+   jz label_0
+   mov rax, 69
    push rax
-   push QWORD [rsp + 8]
-
+   mov rax, 60
+   pop rdi
+   syscall
+   add rsp, 0
+label_0:
+   mov rax, 1
+   push rax
    mov rax, 60
    pop rdi
    syscall
