@@ -20,6 +20,8 @@ _start:
    pop rbx
    div rbx
    push rax
+   mov rax, 0
+   push rax
    push QWORD [rsp + 0]
 
    pop rax
