@@ -328,27 +328,15 @@ class Parser {
             auto stmt_exit = m_allocator.alloc<NodeStmtExit>();
 
             if (auto node_expr = parse_expr()) {
-//                stmt_exit = {.expr = node_expr.value()};
+                // stmt_exit = {.expr = node_expr.value()};
                 stmt_exit->expr = node_expr.value();
             } else {
                 std::cerr << "Invalid Expression" << std::endl;
                 exit(EXIT_FAILURE);
             }
             try_consume(TokenType::close_paren, "Expected `)`");
-            // if (peek().has_value() && peek().value().type == TokenType::close_paren) {
-            //     consume();
-            // } else {
-            //     std::cerr << "Expected `)`" << std::endl;
-            //     exit(EXIT_FAILURE);
-            // }
             try_consume(TokenType::semi, "Expected `;`");
-            // if (peek().has_value() && peek().value().type == TokenType::semi) {
-            //     consume(); // Consume the semicolon
-            // } else {
-            //     std::cerr << "Expected `;`" << std::endl;
-            //     exit(EXIT_FAILURE);
-            // }
-            // return NodeStmt{.var = stmt_exit};
+
             auto stmt = m_allocator.alloc<NodeStmt>();
             stmt->var = stmt_exit;
             return stmt;
@@ -356,8 +344,7 @@ class Parser {
                    && peek(1).has_value() && peek(1).value().type == TokenType::ident
                    && peek(2).has_value() && peek(2).value().type == TokenType::eq) {
             consume();
-//            auto stmt_let = NodeStmtLet {.ident = consume()};
-//            consume();
+            // auto stmt_let = NodeStmtLet {.ident = consume()};
             auto stmt_let = m_allocator.alloc<NodeStmtLet>();
             stmt_let->ident = consume();
             consume();
@@ -368,31 +355,17 @@ class Parser {
                 exit(EXIT_FAILURE);
             }
             try_consume(TokenType::semi, "Expected `;`");
-            // if (peek().has_value() && peek().value().type == TokenType::semi) {
-            //     consume(); // Consume the semicolon
-            // } else {
-            //     std::cerr << "Expected `;`" << std::endl;
-            //     exit(EXIT_FAILURE);
-            // }
-            // return NodeStmt{.var = stmt_let};
+
             auto stmt = m_allocator.alloc<NodeStmt>();
             stmt->var = stmt_let;
             return stmt;
         } else if (peek().has_value() && peek().value().type == TokenType::open_curly) {
             if (auto scope = parse_scope()) {
-//                 auto stmt = m_allocator.alloc<NodeStmt>();
-//                 stmt->var = scope.value();
-//                 return stmt;
+
             } else {
-                std::cerr << "Invalid Scope" << std::endl; 
+                std::cerr << "Invalid Scope" << std::endl;
                 exit(EXIT_FAILURE);
             }
-            // auto scope = m_allocator.alloc<NodeScope>();
-            // while (auto stmt = parse_stmt()) {
-            //     scope->stmts.push_back(stmt.value());
-            // }
-            // try_consume(TokenType::close_curly, "Expected `}`");
-            
         } else if (auto if_ = try_consume(TokenType::if_)) {
             try_consume(TokenType::open_paren, "Expected `(`");
             auto stmt_if = m_allocator.alloc<NodeStmtIf>();
@@ -413,12 +386,13 @@ class Parser {
             stmt->var = stmt_if;
             return stmt;
         }
-        else {
-            // std::cerr << "Invalid Statement" << std::endl;
-            // exit(EXIT_FAILURE);
-            return {};
-        }
+
+        // std::cerr << "Invalid Statement" << std::endl;
+        // exit(EXIT_FAILURE);
+
+        return {};
     }
+
 
     std::optional<NodeProg> parse_prog() {
         NodeProg prog;
