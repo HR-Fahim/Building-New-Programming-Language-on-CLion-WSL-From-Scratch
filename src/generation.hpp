@@ -1,13 +1,3 @@
-// Created by Asus on 9/28/2023.
-// This comment provides information about the author and creation date of the file.
-
-#ifndef HYDROGEN_GENERATION_H
-#define HYDROGEN_GENERATION_H
-// These lines are part of an include guard to prevent double inclusion of this header file.
-
-#endif // HYDROGEN_GENERATION_H
-// This line ends the include guard.
-
 #pragma once
 // This pragma ensures that the header is included only once, similar to include guards.
 
