@@ -1,12 +1,3 @@
-//
-// Created by Asus on 9/28/2023.
-//
-
-//#ifndef HYDROGEN_TOKENIZATION_HPP
-//#define HYDROGEN_TOKENIZATION_HPP
-//
-//#endif //HYDROGEN_TOKENIZATION_HPP
-
 #pragma once
 
 #include <string>
@@ -30,26 +21,15 @@ enum class TokenType {
     if_
 };
 
-// bool is_bin_op(TokenType type) {
-//     switch (type) {
-//         case TokenType::plus:
-//         case TokenType::star:
-//             return true;
-//         default:
-//             return false;
-//     }
-// }
+// Refactored bin_prec function to comply with line length limit and improve readability
 
 std::optional<int> bin_prec(TokenType type) {
-    switch (type) {
-        case TokenType::sub:
-        case TokenType::plus:
-            return 0;
-        case TokenType::div:
-        case TokenType::star:
-            return 1;
-        default:
-            return {};
+    if (type == TokenType::sub || type == TokenType::plus) {
+        return 0;
+    } else if (type == TokenType::div || type == TokenType::star) {
+        return 1;
+    } else {
+        return {};
     }
 }
 
@@ -66,180 +46,116 @@ class Tokenizer {
 
         }
 
-        inline std::vector<Token> tokenize()
-        {
-    //        std::vector<Token> tokens;
+inline std::vector<Token> tokenize()
+{
+    std::string buf;
+    std::vector<Token> tokens;
 
-            // for (char c : str) {
-            //     std::cout << c << std::endl;
-            // }
+    // Loop until there are no more characters to process
+    while (peek().has_value()) {
 
-            // std::vector<char> buf {};
-
-            std::string buf;
-            std::vector<Token> tokens;
-
-            while (peek().has_value()){
-
-                if (std::isalpha(peek().value())) {
-                    buf.push_back(consume());
-                    while (peek().has_value() && std::isalnum(peek().value())) {
-                        buf.push_back(consume());
-                    }
-                    if (buf == "exit") {
-                        tokens.push_back({.type = TokenType::exit});
-                        buf.clear();
-                        // continue;
-                    }
-                    else if (buf == "let") {
-                        tokens.push_back({.type = TokenType::let});
-                        buf.clear();
-                        // continue;
-                    }
-                    else if (buf == "if") {
-                        tokens.push_back({.type = TokenType::if_});
-                        buf.clear();
-                        // continue;
-                    }
-                    else
-                    {
-                        // std::cerr << "You messed up!" << std::endl;
-                        // exit(EXIT_FAILURE);
-                        
-                        tokens.push_back({.type = TokenType::ident, .value = buf});
-                        buf.clear();
-                        // continue;
-                    }
-                }
-                else if (std::isdigit(peek().value())) {
-                    buf.push_back(consume());
-                    while (peek().has_value() && std::isdigit(peek().value())) {
-                        buf.push_back(consume());
-                    }
-                    tokens.push_back({.type = TokenType::int_lit, .value = buf});
-                    buf.clear();
-                    // continue;
-                }
-                else if (peek().value() == '(') {
-                    consume();
+        if (std::isalpha(peek().value())) {
+            buf.push_back(consume());
+            // Keep consuming characters until a non-alphanumeric character is encountered
+            while (peek().has_value() && std::isalnum(peek().value())) {
+                buf.push_back(consume());
+            }
+            // Check if the identifier is a keyword
+            if (buf == "exit") {
+                tokens.push_back({.type = TokenType::exit});
+                buf.clear();
+            }
+            else if (buf == "let") {
+                tokens.push_back({.type = TokenType::let});
+                buf.clear();
+            }
+            else if (buf == "if") {
+                tokens.push_back({.type = TokenType::if_});
+                buf.clear();
+            }
+            else {
+                // If the identifier is not a keyword, treat it as an identifier token
+                tokens.push_back({.type = TokenType::ident, .value = buf});
+                buf.clear();
+            }
+        }
+        else if (std::isdigit(peek().value())) {
+            buf.push_back(consume());
+            // Keep consuming characters until a non-digit character is encountered
+            while (peek().has_value() && std::isdigit(peek().value())) {
+                buf.push_back(consume());
+            }
+            // Add the integer literal token to the vector
+            tokens.push_back({.type = TokenType::int_lit, .value = buf});
+            buf.clear();
+        }
+        else {
+            // Handle other types of tokens
+            char c = consume();
+            switch (c) {
+                case '(':
                     tokens.push_back({.type = TokenType::open_paren});
-                    // continue;
-                }
-                else if (peek().value() == ')') {
-                    consume();
+                    break;
+                case ')':
                     tokens.push_back({.type = TokenType::close_paren});
-                    // continue;
-                }
-                else if (peek().value() == ';') {
-                    consume();
+                    break;
+                case ';':
                     tokens.push_back({.type = TokenType::semi});
-                    // continue;
-                }
-                else if (peek().value() == '=') {
-                    consume();
+                    break;
+                case '=':
                     tokens.push_back({.type = TokenType::eq});
-                    // continue;
-                }
-                else if (peek().value() == '+') {
-                    consume();
+                    break;
+                case '+':
                     tokens.push_back({.type = TokenType::plus});
-                    // continue;
-                }
-                else if (peek().value() == '-') {
-                    consume();
+                    break;
+                case '-':
                     tokens.push_back({.type = TokenType::sub});
-                    // continue;
-                }
-                else if (peek().value() == '*') {
-                    consume();
+                    break;
+                case '*':
                     tokens.push_back({.type = TokenType::star});
-                    // continue;
-                }
-                else if (peek().value() == '/') {
-                    consume();
+                    break;
+                case '/':
                     tokens.push_back({.type = TokenType::div});
-                    // continue;
-                }
-                else if (peek().value() == '{') {
-                    consume();
+                    break;
+                case '{':
                     tokens.push_back({.type = TokenType::open_curly});
-                    // continue;
-                }
-                else if (peek().value() == '}') {
-                    consume();
+                    break;
+                case '}':
                     tokens.push_back({.type = TokenType::close_curly});
-                    // continue;
-                }
-                else if (std::isspace(peek().value())) {
-                    consume();
-                    // continue;
-                }
-                else {
+                    break;
+                case ' ':
+                case '\t':
+                case '\n':
+                case '\r':
+                    // Ignore whitespace characters
+                    break;
+                default:
+                    // Handle unexpected characters
                     std::cerr << "You messed up!" << std::endl;
                     exit(EXIT_FAILURE);
-                }
             }
-            m_index = 0;
-            return tokens;
-
-            // // for (int i = 0; i < str.length(); i++) {
-            // //     char c = str.at(i);
-            //     if (std::isalpha(c)) {
-            //         buf.push_back(c);
-            //         i++;
-
-            //         while (std::isalnum(str.at(i))) {
-            //             buf.push_back(str.at(i));
-            //             i++;
-            //         }
-            //         i--;
-
-            //         if (buf == "exit") {
-            //             tokens.push_back({.type = TokenType::exit});
-            //             buf.clear();
-            //             continue;
-            //         }
-            //         else {
-            //             std::cerr << "You messed up!" << std::endl;
-            //             exit(EXIT_FAILURE);
-            //         }
-            //     }
-            //     else if (std::isspace(c)) {
-            //         continue;
-            //     }
-            //     else if(std::isdigit(c)) {
-            //         buf.push_back(c);
-            //         i++;
-            //         while (std::isdigit(str.at(i))) {
-            //             buf.push_back(str.at(i));
-            //             i++;
-            //         }
-            //         i--;
-            //         tokens.push_back({.type = TokenType::int_lit, .value = buf});
-            //         buf.clear();
-            //     }
-            //     else if (c == ';') {
-            //         tokens.push_back({.type = TokenType::semi});
-            //     }
-            //     else {
-            //         std::cerr << "You messed up!" << std::endl;
-            //         exit(EXIT_FAILURE);
-            //     }
-            // }
-            // return tokens;
         }
+    }
+
+    // Reset the index and return the tokens
+    m_index = 0;
+    return tokens;
+}
 
     private:
 
-        [[nodiscard]] inline std::optional<char> peek(int offset = 0) const
-        {
-            if (m_index + offset >= m_src.length()) {
-                return {};
-            }
-            else {
-                return m_src.at(m_index + offset);
-            }
-        }
+// Refactored code to adhere to the 66 characters per line rule
+[[nodiscard]]
+inline std::optional<char> peek(int offset = 0) const
+{
+    // Check if the index with the offset exceeds the length of the source string
+    if (m_index + offset >= m_src.length()) {
+        return {}; // Return an empty optional if out of bounds
+    } else {
+        // Return the character at the index with the offset
+        return m_src.at(m_index + offset);
+    }
+}
 
     inline char consume() { return m_src.at(m_index++); }
 

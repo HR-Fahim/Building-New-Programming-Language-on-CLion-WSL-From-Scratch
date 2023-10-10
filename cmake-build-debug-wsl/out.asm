@@ -1,4 +1,4 @@
-global_start
+global _start
 _start:
    mov rax, 2
    push rax
