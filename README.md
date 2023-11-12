@@ -65,3 +65,17 @@ Efficient compilers play a crucial role in software development by translating h
 - For code linking and assembly, Hydrogen or other tools are used to handle the linking and assembly process. This involves combining the generated code with any necessary libraries and producing the final executable.
 
 Throughout the entire process, error handling is crucial. Hydrogen is used to report meaningful error messages when issues are encountered during lexical analysis, parsing, semantic analysis, or any other phase.
+
+# Resources
+
+- *[Linux System Call Table](https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md)*
+- *[Lexical analysis](https://en.wikipedia.org/wiki/Lexical_analysis)*
+- *[Syntax analysis](https://en.wikipedia.org/wiki/Syntax_analysis)*
+- *[Intermediate code generation](https://en.wikipedia.org/wiki/Intermediate_code)*
+- *[Code generation](https://en.wikipedia.org/wiki/Code_generation)*
+- *[Code linking and assembly](https://en.wikipedia.org/wiki/Code_linking_and_assembly)*
+- *[Precedence Climbing (Eli Bendersky)](https://eli.thegreenplace.net/2012/08/02/parsing-expressions-by-precedence-climbing)*
+- *[Support Tutorial](https://www.youtube.com/watch?v=vcSijrRsrY0&list=PLUDlas_Zy_qC7c5tCgTMYq2idyyT241qs)*
+
+Please let us know if have any questions or suggestions!
+
