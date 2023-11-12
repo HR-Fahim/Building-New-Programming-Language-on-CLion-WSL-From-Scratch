@@ -72,7 +72,7 @@ Throughout the entire process, error handling is crucial. Hydrogen is used to re
 
 # License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/HR-Fahim/Building-New-Programming-Language-on-CLion-WSL-From-Scratch/blob/master/LICENSE) file for details.
 
 
 # Resources
