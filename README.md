@@ -82,5 +82,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - *[Precedence Climbing (Eli Bendersky)](https://eli.thegreenplace.net/2012/08/02/parsing-expressions-by-precedence-climbing)*
 - *[Support Tutorial](https://www.youtube.com/watch?v=vcSijrRsrY0&list=PLUDlas_Zy_qC7c5tCgTMYq2idyyT241qs)*
 
-Please let us know if have any questions or suggestions!
+Please let me know if have any questions or suggestions!
 
