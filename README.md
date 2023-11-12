@@ -2,6 +2,8 @@
 
 Compiler design refers to the process of creating a compiler, which is a specialized software program that translates high-level source code written in a programming language into machine code or an intermediate code. The primary goal of a compiler is to facilitate the execution of the source code on a target computer system.
 
+![Compiler Design](https://github.com/HR-Fahim/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL/assets/66734379/7c7ea2b5-8c5f-41d6-b334-a86453be88b8)
+
 Here are the key components and stages involved in compiler design:
 
 1. **Lexical Analysis:**
@@ -40,16 +42,26 @@ Efficient compilers play a crucial role in software development by translating h
 
 - Compiler design involves several key aspects. In the lexical analysis phase, a set of rules is defined using regular expressions to identify and tokenize the source code. Hydrogen is used to create a lexer or scanner that processes the source code and produces a stream of tokens.
 
+![Tokenization](https://github.com/HR-Fahim/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL/assets/66734379/2c70b30e-1e18-4bc9-8b04-46d38b62bd37)
+
 - For syntax analysis, Hydrogen is employed to define the grammar of the programming language. Rules are written for parsing the tokens generated in the lexical analysis phase, building a parse tree or an abstract syntax tree (AST). This step involves creating a parser.
+
+![Parser](https://github.com/HR-Fahim/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL/assets/66734379/39189cd5-ffb2-48bb-82a7-ac338aeca3b6)
 
 - After obtaining the AST, semantic analysis is implemented. This involves checking the correctness of the code in terms of its meaning. Hydrogen is used to traverse the AST and perform various checks like type checking, scoping, and other semantic rules.
 
+![AST](https://github.com/HR-Fahim/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL/assets/66734379/4482f137-760b-475a-b8be-139d817fd9ca)
+
 - Hydrogen is also used to generate an intermediate representation of the code in the intermediate code generation phase. This could be a simple three-address code or any other representation that simplifies further optimization and code generation.
+
+![Generation](https://github.com/HR-Fahim/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL/assets/66734379/205406c2-1d68-4c25-b34e-87acfb589b9d)
 
 - To optimize the code, Hydrogen can be utilized to implement various techniques. Common optimizations include constant folding, common subexpression elimination, and loop optimization. The intermediate representation is traversed, and these optimizations are applied.
 
 - In the code generation phase, Hydrogen is used to generate the target code, whether it's assembly code or machine code. The code generator maps the intermediate representation to the specific instructions of the target architecture.
 
+![ASM](https://github.com/HR-Fahim/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL/assets/66734379/7a72e50f-49f4-46b1-b3fa-f4d90e71a0aa)
+
 - For code linking and assembly, Hydrogen or other tools are used to handle the linking and assembly process. This involves combining the generated code with any necessary libraries and producing the final executable.
 
-- Throughout the entire process, error handling is crucial. Hydrogen is used to report meaningful error messages when issues are encountered during lexical analysis, parsing, semantic analysis, or any other phase.
+Throughout the entire process, error handling is crucial. Hydrogen is used to report meaningful error messages when issues are encountered during lexical analysis, parsing, semantic analysis, or any other phase.
