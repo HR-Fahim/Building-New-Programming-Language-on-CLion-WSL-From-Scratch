@@ -58,6 +58,8 @@ Efficient compilers play a crucial role in software development by translating h
 
 - To optimize the code, Hydrogen can be utilized to implement various techniques. Common optimizations include constant folding, common subexpression elimination, and loop optimization. The intermediate representation is traversed, and these optimizations are applied.
 
+![Grammar](https://github.com/HR-Fahim/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL/assets/66734379/d6082800-ff92-463c-88ef-439f1917d931)
+
 - In the code generation phase, Hydrogen is used to generate the target code, whether it's assembly code or machine code. The code generator maps the intermediate representation to the specific instructions of the target architecture.
 
 ![ASM](https://github.com/HR-Fahim/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL/assets/66734379/7a72e50f-49f4-46b1-b3fa-f4d90e71a0aa)
