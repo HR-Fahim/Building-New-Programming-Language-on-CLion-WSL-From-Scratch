@@ -66,6 +66,8 @@ Efficient compilers play a crucial role in software development by translating h
 
 - For code linking and assembly, Hydrogen or other tools are used to handle the linking and assembly process. This involves combining the generated code with any necessary libraries and producing the final executable.
 
+![Final Code](https://github.com/HR-Fahim/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL/assets/66734379/05b31d60-c7d8-46e1-8428-880efbcbc55d)
+
 Throughout the entire process, error handling is crucial. Hydrogen is used to report meaningful error messages when issues are encountered during lexical analysis, parsing, semantic analysis, or any other phase.
 
 # License
