@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/src/main.cpp" "CMakeFiles/hydro.dir/src/main.cpp.o" "gcc" "CMakeFiles/hydro.dir/src/main.cpp.o.d"
+  "/mnt/c/Users/Asus/Desktop/CSE425/Project/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL/src/main.cpp" "CMakeFiles/hydro.dir/src/main.cpp.o" "gcc" "CMakeFiles/hydro.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.

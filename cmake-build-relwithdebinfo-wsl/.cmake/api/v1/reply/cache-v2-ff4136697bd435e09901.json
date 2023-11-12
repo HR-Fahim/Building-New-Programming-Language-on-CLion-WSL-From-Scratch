@@ -43,7 +43,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : "RelWithDebInfo"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/cmake-build-debug-wsl"
+			"value" : "/mnt/c/Users/Asus/Desktop/CSE425/Project/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL/cmake-build-relwithdebinfo-wsl"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -679,7 +679,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch"
+			"value" : "/mnt/c/Users/Asus/Desktop/CSE425/Project/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1247,7 +1247,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/cmake-build-debug-wsl"
+			"value" : "/mnt/c/Users/Asus/Desktop/CSE425/Project/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL/cmake-build-relwithdebinfo-wsl"
 		},
 		{
 			"name" : "hydrogen_IS_TOP_LEVEL",
@@ -1271,7 +1271,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch"
+			"value" : "/mnt/c/Users/Asus/Desktop/CSE425/Project/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL"
 		}
 	],
 	"kind" : "cache",

@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-RelWithDebInfo-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "RelWithDebInfo",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "hydro::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-hydro-RelWithDebInfo-75fadb489028be1b9d60.json",
+					"jsonFile" : "target-hydro-Debug-794f87512983d129a94e.json",
 					"name" : "hydro",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch/cmake-build-relwithdebinfo-wsl",
-		"source" : "/mnt/c/Users/Asus/Desktop/CSE425/Project/Compiler-Performance-Tuning-With-ML-Algorithms-From-Scratch"
+		"build" : "/mnt/c/Users/Asus/Desktop/CSE425/Project/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL/cmake-build-debug-wsl",
+		"source" : "/mnt/c/Users/Asus/Desktop/CSE425/Project/Constructing-New-Programming-Language-in-CLion-From-Scratch-WSL"
 	},
 	"version" : 
 	{
